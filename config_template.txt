@@ -1,15 +1,15 @@
 # Copy this file to .env and fill in your actual values
 
 # Telegram API credentials (get from https://my.telegram.org/apps)
-API_ID=23009212
-API_HASH=6f92ad11135a86d038f0dfb986d59f03
-PHONE_NUMBER="+998990675624"
+API_ID=222222
+API_HASH=2222
+PHONE_NUMBER="+222222"
 
 # Source channel (WatcherGuru)
-SOURCE_CHANNEL=music_jasper
+SOURCE_CHANNEL=22222
 
 # Your destination channel (replace with your channel username or ID)
-DESTINATION_CHANNEL="-1002355698724"
+DESTINATION_CHANNEL="-2222"
 
 # Session name for Telegram client
 SESSION_NAME=watcher_guru_monitor
