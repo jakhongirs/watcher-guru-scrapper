@@ -118,7 +118,7 @@ class TelegramChannelMonitor:
     async def translate_text(self, text):
         """Translate text to Uzbek and Russian using OpenAI"""
         if not text:
-            return "@hbs_akademiya"
+            return "@pullab_news"
         
         try:
             response = self.openai_client.chat.completions.create(
@@ -146,14 +146,14 @@ class TelegramChannelMonitor:
             
             translated_text = response.choices[0].message.content.strip()
             # Add the mention statically after translation
-            final_text = f"{translated_text}\n\n@hbs_akademiya"
+            final_text = f"{translated_text}\n\n@pullab_news"
             logger.info("Successfully translated text using OpenAI")
             return final_text
             
         except Exception as e:
             logger.error(f"Translation failed: {e}")
             # Fallback: return original text with custom mention
-            return f"{text}\n\n@hbs_akademiya"
+            return f"{text}\n\n@pullab_news"
 
     async def handle_grouped_media(self, messages, destination):
         """Handle grouped media (albums) from the source channel"""
